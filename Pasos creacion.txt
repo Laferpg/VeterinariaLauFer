@@ -1,0 +1,63 @@
+Instalacion de Loopback  para aplicacion VetLauFer
+
+En la terminal de git bach pegar comando
+
+npm install -g @loopback/cli
+
+Si sales errores colocar los siguientes comando hasta q salgan 0 vulnerabilidades
+
+npm audit fix --force
+
+npm i --package-lock-only
+
+Crear nuevo proyecto pegar comando
+
+lb4 app
+
+En esta parte nos pide colocarle un nombre al proyecto
+Un descripcion
+Un nombre para el directorio raiz
+Un nombre de la clase se aplicaicon coloque app
+Caracteristicas habilitadas dajar selecionadas todas
+
+
+Luego ingresamos a donde creamos la app en este caso 
+
+cd BackendVetLauFer
+
+Luego le damos correr a ver si esta lista con
+
+npm start
+
+Con control C se para el correr de la aplicacion
+
+Primero se crea el Datasource
+
+con 
+lb4 datasource
+Se le da un nombre  que enes te caso es mongodb 
+
+Nos salen varias opciones para el conector 
+
+Escogemos el conector de MongoDB
+
+Nos sale para poner cadena de coneccion y otras de deja bacio hasta q sale 
+la opcion de yes
+
+
+Se crea el datasource y ahaora vamos al datasource q creamos y 
+colocamos la direccion del mongobd para la conexion
+
+
+EL mongo esta con el correo de Nanda25
+en donde dice url y se remplaza la clave por la q le colocamos
+
+
+mongodb+srv://laferpega:<password>@cluster0.h9mrzcy.mongodb.net/?retryWrites=true&w=majority
+
+despues del net/ le damos el nombre a nuestra base de datos
+
+VetLafer
+
+
+
