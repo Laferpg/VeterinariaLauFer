@@ -33,6 +33,10 @@ export class Pedido extends Entity {
   })
   Cantidad: number;
 
+  @property({
+    type: 'string',
+  })
+  usuarioId?: string;
 
   constructor(data?: Partial<Pedido>) {
     super(data);

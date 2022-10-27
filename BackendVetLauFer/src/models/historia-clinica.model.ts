@@ -32,6 +32,10 @@ export class HistoriaClinica extends Entity {
   })
   FrecCardiaca: number;
 
+  @property({
+    type: 'string',
+  })
+  mascotaId?: string;
 
   constructor(data?: Partial<HistoriaClinica>) {
     super(data);

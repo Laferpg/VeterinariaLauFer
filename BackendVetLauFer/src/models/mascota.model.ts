@@ -1,4 +1,5 @@
-import {Entity, model, property} from '@loopback/repository';
+import {Entity, model, property, hasOne} from '@loopback/repository';
+import {HistoriaClinica} from './historia-clinica.model';
 
 @model()
 export class Mascota extends Entity {
@@ -39,6 +40,18 @@ export class Mascota extends Entity {
   })
   FechaNacimiento: string;
 
+  @property({
+    type: 'string',
+  })
+  usuarioId?: string;
+
+  @hasOne(() => HistoriaClinica)
+  historiaClinica: HistoriaClinica;
+
+  @property({
+    type: 'string',
+  })
+  planId?: string;
 
   constructor(data?: Partial<Mascota>) {
     super(data);
