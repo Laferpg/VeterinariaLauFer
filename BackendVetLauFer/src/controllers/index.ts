@@ -10,7 +10,6 @@ export * from './usuario-rol.controller';
 export * from './contacto.controller';
 export * from './historia-clinica.controller';
 export * from './mascota.controller';
-export * from './permisos.controller';
 export * from './plan.controller';
 export * from './producto-servicio.controller';
 export * from './rol.controller';

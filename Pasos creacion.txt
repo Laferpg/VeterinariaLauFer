@@ -10,6 +10,8 @@ npm audit fix --force
 
 npm i --package-lock-only
 
+Como ya se instalo global desde esta parte
+
 Crear nuevo proyecto pegar comando
 
 lb4 app
@@ -55,9 +57,77 @@ en donde dice url y se remplaza la clave por la q le colocamos
 
 mongodb+srv://laferpega:<password>@cluster0.h9mrzcy.mongodb.net/?retryWrites=true&w=majority
 
-despues del net/ le damos el nombre a nuestra base de datos
+despues del net/ le damos el nombre a nuestra base de datos despues del / y antes ?retry
 
 VetLafer
 
+https://www.youtube.com/watch?v=Q8T9SKVVzNs
 
+
+CREACION DE LOS MODELOS
+En base al UML se crean los modelos
+
+lb4 model
+Nos pide un nombre para darle y ns pregunta si e suna entidad o un modelo, 
+En este caso son nuetsras entidades
+En las propiedades de formato libre adicionales le ponemos que NO
+
+La primera es Id por o tanto es el id y se da para q genere automaticamnee
+
+Se crean todos los modelos de las entidades
+
+CREAR Repositorio
+
+lb4 repository
+
+CREAR Relaciones
+lb4 relation
+
+
+Siempre Cada relacion tiene dos vias
+
+Un usuario tiene muchas mascotas hasmany
+una mascota le pertenece a un usuario  belongsto
+
+un usuario tiene un rol
+
+rol muchos a muchos permisos
+
+
+
+Un plan hasmany Mascotas
+Una mascota belongsto Plan
+
+Mascota has one Historia clinica
+
+usuario tiene has many Producto/servicio 
+producto/servicio belongsto usuario      Pertenece
+
+
+se le yes cuando pregunte 
+
+
+
+
+CREAR SERVICIO
+
+lb4 service
+
+Clase de servicio local vinculado a contexto de aplicaciones
+
+Nombre 
+Notificacion
+Autenticacion
+
+
+
+CREAR CONTROLADORES
+
+lb4 controller
+
+Los controladores REST con funciones Crud
+
+Respositorio de la que se esta haciendo
+
+Se omite el id cuando se crea una instancia nueva yes
 
